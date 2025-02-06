@@ -234,3 +234,88 @@ margin-top: 40px;
 .education-element{
     margin-top: -10px;
 }
+/* ✅ Responsive Design pentru dispozitive mobile */
+@media (max-width: 768px) {
+    .app-wrapper {
+        display: flex;
+        flex-direction: column; /* Așează elementele pe verticală */
+        width: 100%;            /* Lățime completă pe ecran */
+        margin: 20px 0;         /* Eliminare margini laterale */
+        padding: 10px;
+    }
+
+    .right-side-container {
+        padding: 20px;          /* Reducerea padding-ului */
+    }
+
+    .sidebar-section {
+        padding: 20px;          /* Spațiere mai mică pentru sidebar */
+        text-align: center;     /* Centrează conținutul */
+    }
+
+    .sidebar-image {
+        width: 100%;            /* Imagine adaptată la lățimea ecranului */
+        max-width: 300px;       /* Limitează dimensiunea imaginii */
+        height: auto;           /* Păstrează proporțiile imaginii */
+        margin: 0 auto;         /* Centrează imaginea */
+    }
+
+    .contacts-container,
+    .tech-skills-section,
+    .soft-skills-section {
+        padding-left: 10px;     /* Reducerea padding-ului lateral */
+        padding-right: 10px;
+    }
+
+    .about-me-name {
+        font-size: 28px;        /* Redimensionare text pentru titlu */
+    }
+
+    .about-me-profession,
+    .about-me-description {
+        font-size: 14px;        /* Ajustarea dimensiunii fontului */
+        line-height: 20px;
+    }
+
+    .projects-header,
+    .work-experience-header,
+    .education-header,
+    .tech-skills-header,
+    .soft-skills-header {
+        font-size: 20px;        /* Diminuarea dimensiunii fontului pentru titluri */
+    }
+
+    .contacts-header,
+    .contacts-item,
+    .contacts-phone,
+    .contacts-email {
+        font-size: 14px;        /* Dimensiuni mai mici pentru contact */
+    }
+
+    .company-container,
+    .education-element {
+        margin-bottom: 20px;    /* Spațiu mai mare între secțiuni */
+    }
+}
+
+/* ✅ Responsive Design pentru tablete */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .app-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    .right-side-container {
+        padding: 30px;
+    }
+
+    .sidebar-image {
+        max-width: 350px;
+        height: auto;
+        margin: 0 auto;
+    }
+}
+
